@@ -1,0 +1,3 @@
+language: bash
+script:
+        - ./test_17745205.sh

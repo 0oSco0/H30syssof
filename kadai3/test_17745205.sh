@@ -22,9 +22,11 @@ diff $tmp-ans $tmp-out || ERROR_EXIT "TEST 6 output"
 echo "Not Prime OK"
 rm -f $tmp-*
 
-echo "Zero Is not Prime" > $tmp-ans
+echo "Zero And One Is not Prime" > $tmp-ans
 ./kadai3/17745205.sh 0 > $tmp-out || ERROR_EXIT "TEST 0 input"
 diff $tmp-ans $tmp-out || ERROR_EXIT "TEST 0 output"
+./kadai3/17745205.sh 1 > $tmp-out || ERROR_EXIT "TEST 1 input"
+diff $TMP-ans $Tmp-out || ERROR_EXIT "TEST 1 output"
 
 echo "0 OK"
 rm -f $tmp-*
